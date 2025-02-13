@@ -6,8 +6,8 @@ public class Console01 {
      * */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Put inch to convert to cm: ");
+        System.out.print("Read inch to convert to cm: ");
         int inch = scanner.nextInt();
-        System.out.printf("Your result: %.2f", inch * 2.54);
+        System.out.printf("%d inch equals to: %.2f cm", inch, inch * 2.54);
     }
 }
