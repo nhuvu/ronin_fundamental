@@ -16,5 +16,7 @@ public class Console03 {
         int minute = ((input%525960)%1440)%60;
         System.out.printf("%d phút => %d năm, %d ngày, %d giờ, %d phút",
                 input, year, day, hour, minute);
+
+        scanner.close();
     }
 }

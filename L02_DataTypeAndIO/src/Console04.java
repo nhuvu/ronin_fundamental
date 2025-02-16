@@ -14,5 +14,7 @@ public class Console04 {
         DateTimeFormatter f = DateTimeFormatter.ofPattern( "dd/MM/yyyy" );
         String output  = ld.format(f);
         System.out.printf("%s", output);
+
+        scanner.close();
     }
 }

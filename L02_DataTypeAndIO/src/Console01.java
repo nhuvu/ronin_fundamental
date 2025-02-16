@@ -9,5 +9,7 @@ public class Console01 {
         System.out.print("Read inch to convert to cm: ");
         int inch = scanner.nextInt();
         System.out.printf("%d inch equals to: %.2f cm", inch, inch * 2.54);
+
+        scanner.close();
     }
 }

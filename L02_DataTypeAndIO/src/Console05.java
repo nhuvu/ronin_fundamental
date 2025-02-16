@@ -11,5 +11,7 @@ public class Console05 {
         float height = scanner.nextFloat();
         System.out.println();
         System.out.printf("Họ và tên: %s \nTuổi: %d \nChiều cao: %.2fm", name, age, height);
+
+        scanner.close();
     }
 }
