@@ -13,16 +13,19 @@ public class HW03 {
         long tong = (long) a + (long) b;
         long hieu = (long) a - (long) b;
         long tich = (long) a * (long) b;
-
+//
         System.out.printf("Tổng của a và b: %d\n", tong);
         System.out.printf("Hiệu của a và b: %d\n", hieu);
         System.out.printf("Tích của a và b: %d\n", tich);
-        if(b == 0){
-            System.out.println("Không thể chia cho 0");
-        } else {
-            float thuong = (float) a / (float) b;
-            System.out.printf("Tích của a và b: %.2f", thuong);
-        }
+        System.out.printf("Tong: %d\n", a + b);
+        System.out.printf("Tich: %d", a * b);
+
+//        if(b == 0){
+//            System.out.println("Không thể chia cho 0");
+//        } else {
+//            float thuong = (float) a / (float) b;
+//            System.out.printf("Tích của a và b: %.2f", thuong);
+//        }
 
 
     }
