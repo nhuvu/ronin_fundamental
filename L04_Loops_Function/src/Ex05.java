@@ -1,6 +1,6 @@
 public class Ex05 {
     /**
-     * Use while loop to find max of n where n^3 < 12000
+     * Sử dụng vòng lặp while để tìm số nguyên n lớn nhất thỏa mãn n^3 < 12.000.
      * */
     public static void main(String[] args) {
         int max = 0;

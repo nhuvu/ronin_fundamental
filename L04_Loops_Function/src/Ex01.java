@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class Ex01 {
-    /*Read unidentified number of integers and:
-    * - count number of positive
-    * - count number of negative
-    * - sum all num
-    * - calculate average**/
+    /*Viết một chương trình đọc một số lượng số nguyên không xác định,
+    xác định có bao nhiêu giá trị dương và âm đã được đọc và
+    tính tổng và giá trị trung bình của các giá trị đầu vào (không tính số 0).
+    Chương trình kết thúc khi nhập vào số 0.
+     **/
     public static void main(String[] args) {
         int allNum = 0;
         int positiveNum = 0;

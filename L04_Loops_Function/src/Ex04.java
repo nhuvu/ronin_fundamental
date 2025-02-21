@@ -1,7 +1,7 @@
 public class Ex04 {
     /**
-     * List down all number in range [100,200] which can divide by 5 OR 6
-     * Not include number which divide by 5 AND 6
+     * Viết chương trình liệt kê các số trong khoảng [100; 200] chia hết cho 5 hoặc chia hết cho 6.
+     * Số chia hết cho cả 5 và 6 là không hợp lệ.
      * */
     public static void main(String[] args) {
         for(int i = 100; i <= 200; i++){

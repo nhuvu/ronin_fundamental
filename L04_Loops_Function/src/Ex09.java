@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Ex09 {
     /**
-     * Find the 2nd largest number from an array of positive integers
+     * Viết một chương trình tìm số lớn thứ 2 trong dãy số nguyên không âm.
+     * input là một dãy cần tìm, output là số lớn thứ 2 trong dãy.
      * */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

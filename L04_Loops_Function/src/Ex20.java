@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex20 {
     /**
-     * Find all divisor of N which is divisible by 2
+     * Cho số nguyên dương N. Nhiệm vụ của bạn là hãy xác định xem có bao nhiêu ước số của N chia hết cho 2.
      * */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

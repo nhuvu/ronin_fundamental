@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex07 {
     /**
-     * Calculate factorial of number
+     * Viết chương trình tính giai thừa của một số n (n > 0).
      * */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

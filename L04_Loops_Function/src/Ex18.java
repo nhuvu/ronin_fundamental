@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Ex18 {
     /**
-     * Check if a + b = c is true/false (a,b,c is input from console)
+     * Cho một phép toán có dạng a+b=c với a,b,c chỉ là các số nguyên dương có một chữ số.
+     * Hãy kiểm tra xem phép toán đó có đúng hay không.
+     * Ví dụ nhập vào 1+2=3 ⇒ kết quả in ra YES, nhập vào 2+2=5 ⇒ kết quả in ra NO.
      * */
     public static void main(String[] args) {
         int a = 0;
