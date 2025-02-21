@@ -8,18 +8,11 @@ public class Ex08 {
      * Nhập từ bàn phím số tiền T và in ra số tờ mỗi loại mệnh giá và tổng số tờ nhận được.
      * */
     public static void main(String[] args) {
-        int numPaper1;
-        int numPaper2;
-        int numPaper5;
-        int numPaper10;
-        int numPaper20;
-        int numPaper100;
-        int numPaper200;
-        int numPaper500;
         int input;
+        int sumPaper = 0;
         Scanner scanner = new Scanner(System.in);
         while (true){
-            System.out.println("Nhập số tiền T ");
+            System.out.print("Nhập số tiền T: ");
             input = scanner.nextInt();
             if(input > 0){
                 break;
@@ -27,5 +20,14 @@ public class Ex08 {
         }
         scanner.close();
 
+        for(int i = 500; i >=1; i--){
+            if(i == 500 || i == 200 || i == 100 || i == 20 || i == 10 || i == 5 || i == 2 || i == 1){
+                int numPaper = input / i;
+                input %= i;
+                sumPaper += numPaper;
+                System.out.printf("Số tờ mệnh giá %d là: %d \n", i, numPaper);
+            }
+        }
+        System.out.printf("Tổng số tờ nhận được: %d tờ", sumPaper);
     }
 }
