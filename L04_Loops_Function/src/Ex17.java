@@ -16,20 +16,26 @@ public class Ex17 {
         }
         scanner.close();
 
-        for(int i = 2; i <= input/2; i++){
+        String output = input + " = ";
+        for(int i = 2; i <= input; i++){
+            int times = 0;
             if(checkPrime(i)){
-                int times = 0;
                 while (true){
-                    input /= i;
-                    times++;
                     if(input % i != 0){
                         break;
                     }
+                    input /= i;
+                    times++;
                 }
-                System.out.printf("Số tờ mệnh giá %d là: %d \n", i, numPaper);
+                if(input > 1){
+                    output = output + i + "^" + times + " x ";
+                }else {
+                    output = output + i + "^" + times;
+                }
+
             }
         }
-        System.out.printf("Tổng số tờ nhận được: %d tờ", sumPaper);
+        System.out.println(output);
     }
 
     public static boolean checkPrime(int n){
