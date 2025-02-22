@@ -19,7 +19,7 @@ public class Ex07 {
     }
 
     public static long factorial (int n){
-        int fac = 1;
+        long fac = 1;
         for(int i = 1; i <= n; i++){
             fac *= i;
         }
