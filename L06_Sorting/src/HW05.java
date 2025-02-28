@@ -23,7 +23,7 @@ public class HW05 {
         //loop số hộp, tất cả hộp đều thỏa mãn thì true, ko thì false
         boolean b = true;
         for(int i = 0; i < covers.length; i++){
-            if(!coverCanHandleStick(sticks, covers, i+1)){
+            if(!coverCanHandleStick(sticks, covers, i)){
                 b = false;
                 break;
             }
@@ -32,10 +32,10 @@ public class HW05 {
     }
 
     //Để đảm bảo đủ hộp cho số gậy thì hộp có độ dài thứ i phải chứa được i gậy
-    // (vd: hộp thứ 1 phải >= độ dài 1 gậy, hộp thứ 2 phải >= độ dài 2 gậy)
+    // (vd: hộp thứ 1 phải chứa được ít nhất 1 gậy, hộp thứ 2 phải chứa được ít nhất 1 gậy..)
     public static boolean coverCanHandleStick(int[] sticks, int[] covers, int idxOfCover){
-        for(int i = 0; i < idxOfCover; i++){
-            if(covers[i] < sticks[i]){
+        for(int i = 0; i < idxOfCover + 1; i++){
+            if(covers[idxOfCover] < sticks[i]){
                 return false;
             }
         }
