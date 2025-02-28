@@ -19,20 +19,14 @@ public class HW01 {
         }
         scanner.close();
 
-        //Tìm max & min
+        //Tìm max & tạo mảng freq (độ dài max+1) chứa frequency của tất cả số từ 0->max
         int max = findMax(array);
-        int min = findMin(array);
-        int[] freq = new int[max - min+1];
-        for(int num : array){
-            freq[num - min]++;
-        }
+        int[] freq = new int[max + 1];
+        for(int i = 0; i < array.l)
+    }
 
-        //Sort array
-        sortByFrequency(array, freq, min);
-        //In mảng đã sort
-        for(int i = 0; i < array.length; i++){
-            System.out.print(array[i] + " ");
-        }
+    public static void selectionSort(int[]arr){
+
     }
 
     public static int findMax (int[] arr){
@@ -43,31 +37,6 @@ public class HW01 {
             }
         }
         return max;
-    }
-
-    public static int findMin (int[] arr){
-        int min = arr[0];
-        for (int i = 0; i < arr.length;i++){
-            if(min > arr[i]){
-                min = arr[i];
-            }
-        }
-        return min;
-    }
-
-    public static void sortByFrequency (int[] arr, int[] freq, int min){
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - 1 - i; j++) {
-                int freq1 = freq[arr[j] - min];
-                int freq2 = freq[arr[j + 1] - min];
-
-                if (freq1 < freq2) {
-                    // Swap if left element has a lower frequency
-                    swap(arr, j, j + 1);
-                }
-            }
-        }
     }
 
     public static void swap (int[] arr, int a, int b){
