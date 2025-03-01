@@ -22,11 +22,57 @@ public class HW01 {
         //Tìm max & tạo mảng freq (độ dài max+1) chứa frequency của tất cả số từ 0->max
         int max = findMax(array);
         int[] freq = new int[max + 1];
-        for(int i = 0; i < array.l)
+        for(int num : array){
+            freq[num]++;
+        }
+
+        //Tạo mảng 2D: cột 1 chứa số thứ tự và cột 2 là số lần xuất hiện của nó
+        int[][] matrix = convertToMatrix(freq);
+
+        //Sort matrix theo giá trị của y (frequency)
+        sortMatrixByValue(matrix);
+
+        //In matrix
+        printByMatrixValue(matrix);
     }
 
-    public static void selectionSort(int[]arr){
+    public static void printByMatrixValue(int[][] matrix){
+        for(int i = matrix.length - 1; i >= 0; i--){
+            //Frequency (y) khác 0 thì in x
+            if(matrix[i][1] != 0){
+                for(int j = 0; j < matrix[i][1]; j++){
+                    System.out.print(matrix[i][0] + " ");
+                }
+            }
+        }
+    }
 
+    public static void sortMatrixByValue(int[][] matrix){
+        int n = matrix.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (matrix[j][1] > matrix[j + 1][1]) {
+                    swap(matrix, j, j + 1);
+                }
+            }
+        }
+    }
+
+    public static int[][] convertToMatrix(int[] arr) {
+        int n = arr.length;
+        int[][] matrix = new int[n][2];
+
+        for (int i = 0; i < n; i++) {
+            matrix[i][0] = i;
+            matrix[i][1] = arr[i];
+        }
+        return matrix;
+    }
+
+    public static void swap (int[][] arr, int a, int b){
+        int[] temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
     }
 
     public static int findMax (int[] arr){
@@ -37,11 +83,5 @@ public class HW01 {
             }
         }
         return max;
-    }
-
-    public static void swap (int[] arr, int a, int b){
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
     }
 }
