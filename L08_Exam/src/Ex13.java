@@ -7,7 +7,7 @@ public class Ex13 {
     public static void main(String[] args) {
         int sum = 0;
         for(int i = 1; i <= 972; i++){
-            if(972%i == 0 && i % 3==0){
+            if(972 % i == 0 && i % 3 == 0){
                 sum++;
             }
         }

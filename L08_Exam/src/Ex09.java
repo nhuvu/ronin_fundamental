@@ -7,8 +7,6 @@ public class Ex09 {
      * */
     public static void main(String[] args) {
         String s = "aecoceoaaeceoaaeoceooceaoeoceooceoaaoeceoaecoea";
-
-
         if(isPalindrome(s)){
             System.out.println(s.charAt(31));
         }else {

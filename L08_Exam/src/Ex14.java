@@ -6,4 +6,7 @@ public class Ex14 {
      * Input: Nhập vào k = 30.
      *Output: In ra kết quả số nhỏ nhất có tổng các chữ số bằng 30. (3999)
      * */
+    public static void main(String[] args) {
+
+    }
 }
