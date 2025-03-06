@@ -1,4 +1,4 @@
-public class Ex13 {
+public class Exam11 {
     /**
      * Cho số nguyên dương N. Nhiệm vụ của bạn là hãy xác định xem có bao nhiêu ước số của N chia hết cho 3.
      *Input: N = 972

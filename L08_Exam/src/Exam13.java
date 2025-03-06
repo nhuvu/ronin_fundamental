@@ -1,4 +1,4 @@
-public class Ex10 {
+public class Exam13 {
     /**
      * Viết chương trình tính 20! % 2752
      *Input: Số 20

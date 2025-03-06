@@ -1,4 +1,4 @@
-public class Ex08 {
+public class Exam09 {
     /**
      * Viết chương trình tính sắp xếp mảng arr theo thứ tự từ nhỏ đến lớn.
      *Input: Mảng long[] arr = {906393690836908L, 906393690836906L, 906393690836900L, ... 906393690836908L};

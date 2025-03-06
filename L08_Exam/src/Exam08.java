@@ -1,4 +1,4 @@
-public class Ex07 {
+public class Exam08 {
     /**
      * Viết chương trình tìm số Fibonacci thứ 50.
      *

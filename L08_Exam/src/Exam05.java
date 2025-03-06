@@ -1,4 +1,4 @@
-public class Ex05 {
+public class Exam05 {
     /**
      * Viết chương trình tính (5^12) % 2752
      *

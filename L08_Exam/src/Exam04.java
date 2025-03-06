@@ -1,4 +1,4 @@
-public class Ex11 {
+public class Exam04 {
     /**
      * Tìm số nguyên n lớn nhất thỏa mãn n^5 < k
      *Input: k = 10947264

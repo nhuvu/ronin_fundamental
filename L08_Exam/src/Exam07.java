@@ -1,4 +1,4 @@
-public class Ex12 {
+public class Exam07 {
     /**
      * Cho một chuỗi String a = "3c6b9a0e8d3a9c8o0e9b83d60eab9bcd6o8a0e6c3b9a98c3dbe0o803e6cba98d60o39a0e6cb98a3dbe0o3c8d960eb9a6"
      * - Gọi x là số lượng ký tự chữ (a-z) có trong chuỗi

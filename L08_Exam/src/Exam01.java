@@ -1,4 +1,4 @@
-public class Ex01 {
+public class Exam01 {
     /**
      * Viết chương trình tìm cặp vị trí i và j đầu tiên trong mảng arrray1D sao cho arrray1D[i] + arrray1D[j] = k
      * Input: k = 1181775932,

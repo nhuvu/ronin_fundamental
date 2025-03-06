@@ -1,4 +1,4 @@
-public class Ex09 {
+public class Exam10 {
     /**
      * Viết chương trình kiểm tra chuỗi aecoceoaaeceoaaeoceooceaoeoceooceoaaoeceoaecoea có phải là một xâu đối xứng không
      *Input: Một xâu ký tự như trên

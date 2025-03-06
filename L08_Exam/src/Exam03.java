@@ -1,4 +1,4 @@
-public class Ex03 {
+public class Exam03 {
     /**
      * Viết chương trình tìm số nguyên tố thứ 500.
      * Input: Một số nguyên n = 500
